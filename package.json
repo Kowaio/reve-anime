@@ -36,7 +36,10 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-grayscale.git"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.4.2",
         "bootstrap": "5.2.3",
+        "jquery": "^3.7.0",
+        "jquery.easing": "^1.4.1",
         "startbootstrap-grayscale": "^7.0.6"
     },
     "devDependencies": {
@@ -44,6 +47,14 @@
         "browser-sync": "2.29.1",
         "chokidar": "3.5.3",
         "concurrently": "6.3.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-header": "^2.0.9",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "^3.0.2",
         "postcss": "8.4.21",
         "prettier": "2.8.6",
         "pug": "3.0.2",

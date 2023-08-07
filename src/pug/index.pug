@@ -56,7 +56,7 @@ html(lang='en')
                     .col-lg-8
                         h2.text-white.mb-4 Built with Bootstrap 5
                         p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
+                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
                             a(href='https://startbootstrap.com/theme/grayscale/') the preview page.
                             | The theme is open source, and you can use it for any purpose, personal or commercial.
                 img.img-fluid(src='assets/img/ipad.png', alt='...')
@@ -96,61 +96,97 @@ html(lang='en')
                                     p.mb-0.text-white-50
                                         | Another example of a project with its respective description. These sections work well responsively as well!
 
-        // Signup
-        section#signup.signup-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-md-10.col-lg-8.mx-auto.text-center
-                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Subscribe to receive updates!
+        //- // Signup
+        //- section#signup.signup-section
+        //-     .container.px-4.px-lg-5
+        //-         .row.gx-4.gx-lg-5
+        //-             .col-md-10.col-lg-8.mx-auto.text-center
+        //-                 i.far.fa-paper-plane.fa-2x.mb-2.text-white
+        //-                 h2.text-white.mb-5 Subscribe to receive updates!
 
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
+        //-                 // * * * * * * * * * * * * * * *
+        //-                 // * * SB Forms Contact Form * *
+        //-                 // * * * * * * * * * * * * * * *
 
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-                        
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
+        //-                 // This form is pre-integrated with SB Forms.
+        //-                 // To make this form functional, sign up at
+        //-                 // https://startbootstrap.com/solution/contact-forms
+        //-                 // to get an API token!
 
-                            // Email address input
+        //-                 form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
 
-                            .row.input-group-newsletter
-                                .col
-                                    input#emailAddress.form-control(
-                                        type='email',
-                                        placeholder='Enter email address...',
-                                        aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
+        //-                     // Email address input
 
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
+        //-                     .row.input-group-newsletter
+        //-                         .col
+        //-                             input#emailAddress.form-control(
+        //-                                 type='email',
+        //-                                 placeholder='Enter email address...',
+        //-                                 aria-label='Enter email address...',
+        //-                                 data-sb-validations='required,email'
+        //-                             )
+        //-                         .col-auto
+        //-                             button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
+        //-                     .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
+        //-                         | An email is required.
+        //-                     .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
+        //-                         | Email is not valid.
 
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+        //-                     // Submit success message
+        //-                     //
+        //-                     // This is what your users will see when the form
+        //-                     // has successfully submitted
 
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
+        //-                     #submitSuccessMessage.d-none
+        //-                         .text-center.mb-3.mt-2.text-white
+        //-                             .fw-bolder Form submission successful!
+        //-                             | To activate this form, sign up at
+        //-                             br
+        //-                             a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
+        //-                     // Submit error message
+        //-                     //
+        //-                     // This is what your users will see when there is
+        //-                     // an error submitting the form
+
+        //-                     #submitErrorMessage.d-none
+        //-                         .text-center.text-danger.mb-3.mt-2 Error sending message!
+        // Contact Form
+        section#contact.signup-section
+        .container.px-4.px-lg-5
+            .row.gx-4.gx-lg-5
+            .col-lg-12.text-center
+                h2.section-heading.section-heading-sub.text-uppercase.text-white Contact
+                h3.section-subheading.section-subcontact
+                p.disclaimer
+                    i
+                    strong.text-white Vous souhaitez nous contacter ?
+                    br
+                p.text-white
+                    | N&rsquo;h&eacute;sitez pas &agrave; nous laisser un message avec le formulaire ci dessous ou nous contacter sur les r&eacute;seaux sociaux, nous reviendrons vers vous dans les plus bref d&eacute;lais.
+            .row
+            .col-lg-12
+                form#contactForm(name='sentMessage' novalidate='novalidate')
+                .row
+                    .col-md-6
+                    .form-group
+                        input#name.form-control(type='text' placeholder='Votre nom *' required='required' data-validation-required-message='Veuillez entrer votre nom.')
+                        p.help-block.text-danger
+                    .form-group
+                        input#email.form-control(type='email' placeholder='Votre e-mail *' required='required' data-validation-required-message='Veuillez entrer votre adresse e-mail.')
+                        p.help-block.text-danger
+                    .form-group
+                        input#phone.form-control(type='tel' placeholder='Votre numéro de téléphone *' required='required' data-validation-required-message='Veuillez entrer un numéro de téléphone afin de vous recontacter.')
+                        p.help-block.text-danger
+                    .col-md-6
+                    .form-group
+                        textarea#message.form-control(placeholder='Votre message *' required='required' data-validation-required-message='Veuillez entrer un message.')
+                        p.help-block.text-danger
+                    .clearfix
+                    .col-lg-12.text-center
+                    #success
+                    button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Envoyer le message
+
 
         // Contact
         section.contact-section.bg-black
@@ -191,6 +227,10 @@ html(lang='en')
             .container.px-4.px-lg-5
                 | Copyright &copy; Your Website 2023
 
+        // JQuery Plugin
+        script(src='vendor/jquery/jquery.min.js')
+        script(src='vendor/jquery-easing/jquery.easing.min.js')
+
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
@@ -202,4 +242,8 @@ html(lang='en')
         // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        //- script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+
+        // Contact form JavaScript
+        script(src='js/jqBootstrapValidation.js')
+        script(src='js/contact_me.js')
