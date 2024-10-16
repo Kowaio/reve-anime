@@ -11092,6 +11092,11 @@ body {
   max-width: 20rem;
   font-size: 1rem;
 }
+@media (min-width: 375px) {
+  .masthead h1, .masthead .h1 {
+    padding-top: 0.25rem;
+  }
+}
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
     font-size: 4rem;
@@ -11166,9 +11171,22 @@ body {
   }
 } */
 
+
 .youtube-frame {
-  width: 504px;
-  height: 283px;
+  width: 320px;
+  height: 180px;
+}
+@media (min-width: 376px) {
+  .youtube-frame {
+    width: 330px;
+    height: 185px;
+  }
+}
+@media (min-width: 576px) {
+  .youtube-frame {
+    width: 490px;
+    height: 275px;
+  }
 }
 @media (min-width: 768px) {
   .youtube-frame {
