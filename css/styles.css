@@ -11275,3 +11275,27 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.shows-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.shows-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #6099d0;
+}
+
+.shows-section .card h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.shows-section .card hr {
+  opacity: 1;
+  border-color: #6099d0;
+  border-width: 0.25rem;
+  width: 3rem;
+}
